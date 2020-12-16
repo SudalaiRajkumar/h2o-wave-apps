@@ -18,7 +18,7 @@ async def init(q: Q):
 
 async def get_inputs(q: Q):
     q.page['main'] = ui.form_card(box="1 2 8 5", items=[
-        ui.text_xl('Enter your English text input to generate:'),
+        ui.text_xl('Enter your text input for generation:'),
         ui.textbox(name="input_text",
                    label='',
                    value=q.app.input_text,
